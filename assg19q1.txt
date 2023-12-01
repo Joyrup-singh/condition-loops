@@ -1,0 +1,29 @@
+What are conditional statements? Explain conditional statements with syntax and examples.
+
+A conditional statement is either a simple conditional statement (IF,EVALUTE,SEARCH)
+or conditional statement made up of an imperative statement that includes a conditional phrase or option.
+You can end a conditional statement with an implicit or explicit scope terminator.
+
+Syntax:
+
+if () condition 
+{
+     logic 
+}
+else if () condition  
+{
+     logic 
+}
+else {
+    Default Decision
+}
+
+Example:
+
+if (time < 10) {
+  greeting = "Good morning";
+} else if (time < 20) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}

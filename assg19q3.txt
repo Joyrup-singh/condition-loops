@@ -1,0 +1,122 @@
+What are loops, and what do we need them? Explain different types of loops with their syntax and
+examples.
+
+Loops:
+
+In the langauge of computer programming loops are used to execute a group of instruction or a block of code multiple times, without use it repeatedly.The block of code is executed based on certain conditions.Loops are the control structure of a program.
+
+Types of Loops:
+Entry controlled loop.
+Exit controlled loop.
+
+Entry controlled loop:
+
+In an entry controlled loop the control statement is written right in the beginning of the loop.This type of loops are also called as pre-checking loops.In this loop the condition of control statement is verified first and if its get true the body of loop gets executed and if the control statement is false then the code in the body does not get executed.
+
+Exit controlled loop:
+
+In an exit control loop the control statement is written at the end of the loop.This type of loop is know as post-checking loops.In this loop the codes are executed once before checking the condition of a control statement.
+
+For Loops:
+
+As discussed above, a For Loop is an entry controlled Loop. The general syntax of a For Loop is given below.
+
+for(initialization; condition; incrementation or decrementation)
+
+{
+
+Body of Loop;
+
+}
+
+The variables required for the control statements can be initialized in the For Loop itself. This variable initialized in the For Loop is called the counter and is incremented or decremented with every iteration of the Loop. The condition is a boolean statement that compares the value of the counter to a fixed value, at every iteration, and terminates the Loop when the condition is not satisfied. The increment or decrement value is set in the Loop.
+
+An example of For Loop is given below.
+
+for(int i=1; i<10; i++)
+
+{
+
+print (i);
+
+}
+
+The above For Loop will print the natural numbers 1 to 10 when executed. The variable ‘i’ is of integer type, and the condition will check if the value of ‘i’ is less than 10, at each iteration. After executing the body of the Loop, the value of ‘i’ is incremented by 1, before the next iteration. In this way, the natural numbers 1 to 10 are displayed on the screen, on executing this Loop.
+
+ 
+
+While Loop:
+
+A while Loop is an entry controlled Loop. The condition checking is done at the beginning of the Loop structure. The general syntax of the while Loop is given below.
+
+while(condition)
+
+{
+
+Body of the Loop;
+
+}
+
+The condition checking is done before the execution of the body of the while Loop. The block of code in the body of the While Loop is executed only if the condition is true. The body of the Loop gets executed as many times as the condition is true. After each iteration of the Loop, the control moves back to the condition checking part at the beginning of the While Loop. If the condition is not met, that is, if the boolean expression in the braces (), turns out to be false, the while Loop is terminated.
+
+An example of the While Loop is given below.
+
+int n=10;
+
+while(n>0)   
+
+{
+
+print (n);
+
+n--;
+
+}
+
+In the above example, the variable ‘n’ is initialized as an integer, and its value is assigned as 10. Every time the condition ‘n>0’ is met the While Loop will be executed, and the value of n will be displayed on the screen. At every iteration, the value of n will be decreased by 1. The Loop will be terminated when the value of ‘n’ becomes less than 1. The above While Loop will display the numbers from 10 to 1.
+
+ 
+
+Do - While Loop:
+
+A do-while Loop is an exit controlled Loop. The syntax of the do-while Loop is similar to that of the while Loop, with the exception of the condition checking. The condition is always checked at the end of the do-while Loop. The general syntax of the do-while Loop is given below.
+
+do
+
+{
+
+Body of the Loop;
+
+} while(condition);
+
+Unlike the entry controlled Loops, the body of the do-while Loop is executed before the condition is checked. Even if the condition is not true, the body of the Loop will be executed for once. If the condition given in the braces () is true, the control is again moved back to the body of the Loop. If the condition is false, the control is moved out of the Loop and the Loop is terminated.
+
+An example of the do-while Loop is given below.
+
+int i=10;
+
+do
+
+{
+
+print (i);
+
+i--;
+
+} while(n>0);
+
+The above do-while Loop will display the numbers 10 to 1 when executed. Now, consider the following example.
+
+int i=0;
+
+do
+
+{
+
+print (i);
+
+i--;
+
+} while(n>0);
+
+The condition ‘n>0’ turns out to be false at the very first iteration of the above-given do-while Loop. Yet, it will be executed once, and 0 will be displayed on the screen. Unlike the other Loops, the do-while Loop ends with the condition checking expression followed by a semicolon ‘;’.
